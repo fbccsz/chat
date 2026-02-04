@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Faca seu pedido na Burger & Co. de forma rapida e facil! Assistente virtual de atendimento automatizado." />
+    <meta name="theme-color" content="#075e54" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Burger & Co." />
+    <meta property="og:title" content="Burger & Co. - Atendimento Automatizado" />
+    <meta property="og:description" content="Faca seu pedido de hamburguer de forma rapida e facil!" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>" />
+    <title>Atendimento Automatico | Burger & Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Prevent text selection on mobile for better UX */
+      .no-select {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      /* Hide scrollbars but keep scroll functionality */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Smooth animations */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-[#d1d7db] font-sans h-[100dvh] overflow-hidden no-select">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
